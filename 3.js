@@ -1,19 +1,19 @@
-export default function isValid(letter) {
+function isValid(letter) {
   if (!letter.includes('(') || !letter.includes(')')) return false;
   const indexOfOpeningParenthesis = letter.indexOf('(');
   if (letter[indexOfOpeningParenthesis + 1] === ')') return false;
   let gift = '';
-  for (let i = 0; i < letter.length; i++) {
-    if (letter[i] === '(') {
-      gift = letter[i];
+  for (const element of letter) {
+    if (element === '(') {
+      gift = element;
       continue;
     }
-    if (letter[i] === ')') {
-      gift = gift + letter[i];
+    if (element === ')') {
+      gift = gift + element;
       break;
     }
     if (gift.length === 0) continue;
-    gift = gift + letter[i];
+    gift = gift + element;
   }
   if (
 		gift.includes('{') ||

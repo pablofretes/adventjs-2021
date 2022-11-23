@@ -1,4 +1,4 @@
-export default function groupBy(collection, it) {
+function groupBy(collection, it) {
 	const itType = typeof it;
 	const result = {};
 	if (itType === 'function') {

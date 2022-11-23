@@ -1,4 +1,4 @@
-export default function maxProfit(prices) {
+function maxProfit(prices) {
   // ¡Y no olvides compartir tu solución en redes!
   let profit = 0;
   for (let i = 0; i < prices.length; i++) {

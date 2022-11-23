@@ -1,4 +1,4 @@
-export default function createXmasTree(height) {
+function createXmasTree(height) {
 	let strAnswer = '';
 	for (let i = 1; i <= height; i++) {
 		let underScores = '';

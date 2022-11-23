@@ -1,4 +1,4 @@
-export default function listGifts(letter) {
+function listGifts(letter) {
 	const data = letter.split(' ').filter((word) => word !== '');
  const giftsMap = {};
  for (const gift of data) {

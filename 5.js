@@ -1,4 +1,4 @@
-export default function daysToXmas(date) {
+function daysToXmas(date) {
   const targetDate = new Date('Dec 25, 2021').getTime();
   const initialDate = new Date(date).getTime();
   const millisecondsBetween = targetDate - initialDate;

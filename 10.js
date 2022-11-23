@@ -1,4 +1,4 @@
-export default function getCoins(change) {
+function getCoins(change) {
 	const coinsMap = {
 		'1': 0,
 		'2': 0,

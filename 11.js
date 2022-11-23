@@ -1,4 +1,4 @@
-export default function shouldBuyFidelity(times) {
+function shouldBuyFidelity(times) {
 	if (times === 0) return false;
 	const percentaje = 0.75;
 	const initialAmount = 250;
